@@ -1,3 +1,5 @@
+mod arguments;
 fn main() {
-    println!("Hello, world!");
+    let val = arguments::get_arg();
+    println!("{:#?}",val);
 }
