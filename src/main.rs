@@ -6,5 +6,9 @@ fn main() {
     let val = arguments::get_arg();
 
     let file_contents = readfile::read_file(&val[2]);
-    println!("{:#?}",file_contents);
+
+    if val[0] == "-c"{
+        println!("{:#?}",file_contents.as_str().contains(val[1].as_str()));
+    }
+
 }
