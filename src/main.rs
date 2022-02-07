@@ -5,6 +5,6 @@ mod readfile;
 fn main() {
     let val = arguments::get_arg();
 
-    readfile::read_file(&val[2]);
-    println!("{:#?}",val);
+    let file_contents = readfile::read_file(&val[2]);
+    println!("{:#?}",file_contents);
 }
